@@ -46,6 +46,12 @@ consistent. Warm the app first. Do not screen-record during timed captures.
 
 ## Analysis
 
+The configuration includes task creation/rename and process exit events so that
+processes launched during a capture can be identified after zygote specialization.
+The initial September 18 baseline predates these three events; its cold-launch
+process names can remain `zygote64`. Do not silently attribute such rows to an app.
+Keep each capture's saved configuration and use the same version for comparisons.
+
 Run SQL with an official Perfetto trace processor (the launcher can be invoked as
 `python3 tools/trace_processor` if it is not executable):
 
