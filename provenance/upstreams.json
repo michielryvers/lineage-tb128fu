@@ -1,0 +1,32 @@
+[
+  {
+    "name": "android_kernel_lenovo_tb128fu",
+    "url": "https://github.com/Roynas-Android-Playground/kernel_lenovo_tb128fu.git",
+    "branch": "master",
+    "revision": "e26c9a73897667b8f5c57714edf1660859147043"
+  },
+  {
+    "name": "android_device_lenovo_tb128fu",
+    "url": "https://github.com/Roynas-Android-Playground/device_lenovo_tb128fu.git",
+    "branch": "16.2",
+    "revision": "95812370599d155b7ae434db4c51835c8e4c0e62"
+  },
+  {
+    "name": "android_device_lenovo_sm6225-common",
+    "url": "https://github.com/Roynas-Android-Playground/device_lenovo_sm6225-common.git",
+    "branch": "16.2",
+    "revision": "9da3f8f3b7e760c693a82524d3ae816e4ec1607f"
+  },
+  {
+    "name": "Motorola kernel donor",
+    "url": "https://github.com/LineageOS/android_kernel_motorola_sm6225.git",
+    "branch": "lineage-24.0",
+    "revision": "39bcecd5c63df849923b1faadc9cde482648a1a1"
+  },
+  {
+    "name": "LineageOS Android manifest",
+    "url": "https://github.com/LineageOS/android.git",
+    "branch": "lineage-24.0",
+    "revision": "f95f03a73c73cb5bc4a2c1f60044535b0caff3ba"
+  }
+]

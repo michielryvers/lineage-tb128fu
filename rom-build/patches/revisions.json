@@ -1,0 +1,40 @@
+{
+  "device-common": {
+    "base": "9da3f8f3b7e760c693a82524d3ae816e4ec1607f"
+  },
+  "device": {
+    "base": "95812370599d155b7ae434db4c51835c8e4c0e62"
+  },
+  "kernel": {
+    "base": "e26c9a73897667b8f5c57714edf1660859147043",
+    "merged_source": "39bcecd5c63df849923b1faadc9cde482648a1a1",
+    "integration_commit": "87d353f733f7ba0636ec2c085ade41f4f9e73693",
+    "uart_commit": "e351b6ca7f78ddbdbb86f175e6f1edb066442e57",
+    "wake_ipc_commit": "64dd813aae37eb0d55328a8cb28060c173b4cb6e",
+    "driver_hardening_commit": "49e2346d211b0943040d664e4371a6cfe1d48f33",
+    "gesture_read_eof_commit": "9fb21e2deeddd6c322313b220244450e7b4363d7",
+    "fcm7_config_commit": "cdd9ad6d7520f7ecd0591ec13043bc6a8da4c24b"
+  },
+  "extract-utils": {
+    "revision": "ff6589c6b0a4a00c592e98940e9e6b6a50c76569"
+  },
+  "libdmabufheap": {
+    "revision": "57925b760460430b1424bf0fa4cb0ffe001b9cfd",
+    "setting": "$(call soong_config_set_bool,libion,legacy_impl,true)"
+  },
+  "libion": {
+    "revision": "abd899da1a42064c66067bc84f427bf27edd81f9"
+  },
+  "soong": {
+    "base": "5ea236479501d50a4a0eafb568f4f35d1bdda3cb"
+  },
+  "qcom-audio": {
+    "base": "da531fc8a1348373308ccacaca5fdbb15baf700d"
+  },
+  "clang-prebuilts": {
+    "base": "29182889399818f97baa65ea238c80e8117981eb"
+  },
+  "update-engine": {
+    "base": "1264871479008d8e17e09638acf0cfa85e3c927f"
+  }
+}

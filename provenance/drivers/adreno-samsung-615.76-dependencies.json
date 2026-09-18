@@ -1,0 +1,49 @@
+{
+  "repository": "galaxy-a05s/android_vendor_samsung_bengal_f",
+  "source_commit": "84a0df45a234684e8d7ce258b5c140f88fa50228",
+  "status": "Pinned experimental donor; see docs/status.md for runtime validation and limitations.",
+  "files": [
+    {
+      "path": "proprietary/vendor/lib/libgpudataproducer.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/libgpudataproducer.so",
+      "size": 496236,
+      "git_blob": "fe12d9f02caf601c79ad50b78b1f279ea621c068",
+      "sha256": "eaf270a5b7ff813c986faf3375c0fdfd59a72048baacf199dbe46a92941a68a6"
+    },
+    {
+      "path": "proprietary/vendor/lib/libkcl.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/libkcl.so",
+      "size": 3551740,
+      "git_blob": "a2b71fe6fe056f4cc97ee9e16abf40a01b393593",
+      "sha256": "8305cadfd9d4cbb594fd5912674afe081b8befad8fd1538158e5a0d1da5e2241"
+    },
+    {
+      "path": "proprietary/vendor/lib/libkernelmanager.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/libkernelmanager.so",
+      "size": 29536,
+      "git_blob": "31bd7559cda1eb118fc150e8bd7671c849f48b96",
+      "sha256": "02fc58bcd06e92e22bc89244cd7ada9629e5981b42c8dec55c05f80d64b3eaf6"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libgpudataproducer.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/libgpudataproducer.so",
+      "size": 732776,
+      "git_blob": "65bc56532e8aa0e37144bd209986e6d48f1d8fb2",
+      "sha256": "99a50e07f39073541c634260daeb4dd780157561455d31d5140cb527373c8abf"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libkcl.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/libkcl.so",
+      "size": 3631672,
+      "git_blob": "974f32a05e54905dc80aab6ab546ce866b643f52",
+      "sha256": "7cb5a6b945d23bcea3411c74812383d91fd799b7214f297cb055e85325013cfd"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libkernelmanager.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/libkernelmanager.so",
+      "size": 53264,
+      "git_blob": "6e893cea5c8d5341cf811734c275775d3a1a801f",
+      "sha256": "e7130d2353af8069e67dbfd571b4d5753cc2f212962d50e91e6220ab9ee87ae6"
+    }
+  ]
+}

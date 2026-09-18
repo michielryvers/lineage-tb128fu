@@ -1,0 +1,15 @@
+--- a/payload_consumer/postinstall_runner_action.cc
++++ b/payload_consumer/postinstall_runner_action.cc
+@@ -115,8 +115,11 @@
+   // If we are switching slots, then we are required to MapAllPartitions,
+   // as FinishUpdate() requires all partitions to be mapped.
+   // And switching slots requires FinishUpdate() to be called first
++  // Recovery VABC verification also unmaps snapshots when verity writes are
++  // disabled. Re-map them before post-install mount checks and FinishUpdate.
+   if (dynamic_control->GetVirtualAbFeatureFlag().IsEnabled() &&
+-      !constants::kIsRecovery) {
++      (!constants::kIsRecovery ||
++       dynamic_control->UpdateUsesSnapshotCompression())) {
+     if (!install_plan_.partitions.empty() ||
+         install_plan_.switch_slot_on_reboot) {
+       if (!dynamic_control->MapAllPartitions()) {

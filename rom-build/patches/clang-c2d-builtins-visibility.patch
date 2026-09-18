@@ -1,0 +1,13 @@
+diff --git a/Android.bp b/Android.bp
+index 6737260d..ff107229 100644
+--- a/Android.bp
++++ b/Android.bp
+@@ -117,6 +117,8 @@ libclang_rt_prebuilt_library_static {
+     // libc.so and libm.so, which exports some builtins symbols for backwards
+     // compatibility.
+     visibility: [
++        // Explicit ARM32 compiler-helper compatibility for the Lenovo C2D blob.
++        "//device/lenovo/sm6225-common/libshim_c2d",
+         "//bionic:__subpackages__",
+         "//frameworks/libs/native_bridge_support/libc:__subpackages__",
+         "//frameworks/libs/native_bridge_support/android_api/libc:__subpackages__",

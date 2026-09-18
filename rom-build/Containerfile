@@ -1,0 +1,15 @@
+FROM ubuntu:24.04
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    bc bison build-essential ccache curl flex g++-multilib gcc-multilib git git-lfs \
+    gnupg gperf imagemagick lib32readline-dev lib32z1-dev libelf-dev liblz4-tool \
+    libncurses-dev libsdl1.2-dev libssl-dev libxml2 libxml2-utils lzop \
+    openjdk-17-jdk-headless pngcrush python3 python-is-python3 rsync schedtool \
+    squashfs-tools unzip xz-utils zip zlib1g-dev ca-certificates file fontconfig \
+    procps ninja-build device-tree-compiler patchelf protobuf-compiler \
+    && rm -rf /var/lib/apt/lists/*
+ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
+WORKDIR /src
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    clang lld llvm binutils-aarch64-linux-gnu binutils-arm-linux-gnueabi \
+    && rm -rf /var/lib/apt/lists/*

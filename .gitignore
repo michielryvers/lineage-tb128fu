@@ -1,0 +1,10 @@
+/build/
+/downloads/
+/tools/
+/artifacts/
+/backups/
+/diagnostics/
+*.pem
+*.pk8
+.env*
+__pycache__/

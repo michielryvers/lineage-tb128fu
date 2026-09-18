@@ -1,0 +1,273 @@
+{
+  "repository": "galaxy-a05s/android_vendor_samsung_bengal_f",
+  "source_commit": "84a0df45a234684e8d7ce258b5c140f88fa50228",
+  "status": "Pinned experimental donor; see docs/status.md for runtime validation and limitations.",
+  "files": [
+    {
+      "path": "proprietary/vendor/gpu/kbc/sequence_manifest.bin",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/gpu/kbc/sequence_manifest.bin",
+      "size": 1860,
+      "git_blob": "c09048bbf9f9ac0a420292ba70cd4218a1cc4dca",
+      "sha256": "deccf88e13f85554e5e6138204f1559ace8b1de294c1bbef94ceed4985c93530"
+    },
+    {
+      "path": "proprietary/vendor/gpu/kbc/unified_kbcs_32.bin",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin",
+      "size": 1590731,
+      "git_blob": "ab4d85266faba7ab0490118e3bdf3222322295c6",
+      "sha256": "03bc7f3f3adbe8f1f51ac99d27578623e099b8684bfed6ad7e405b18811b4e60"
+    },
+    {
+      "path": "proprietary/vendor/gpu/kbc/unified_kbcs_64.bin",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin",
+      "size": 1613275,
+      "git_blob": "84b630cf931d110a23a573a2f0332e4bbbc1a994",
+      "sha256": "4ba98be1ba2dd449723ae92461ebbddda8bf17ca61de08aec333e3ac2b862a4d"
+    },
+    {
+      "path": "proprietary/vendor/gpu/kbc/unified_ksqs.bin",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/gpu/kbc/unified_ksqs.bin",
+      "size": 209153,
+      "git_blob": "cdd7a04228978d366d864ab024d974a6d755d1be",
+      "sha256": "2becc0c1e08a9b625eedc6eb9c1ad39468c3e63b19e03c5efa928160bc80c2e5"
+    },
+    {
+      "path": "proprietary/vendor/lib/egl/eglSubDriverAndroid.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/egl/eglSubDriverAndroid.so",
+      "size": 58100,
+      "git_blob": "4e90d353c849c81e1e7ec708272c2ace5ca22dcb",
+      "sha256": "a9dc76efc7824433aa7c95d07c83739ac9a79af7789f1af55a79a405bf548235"
+    },
+    {
+      "path": "proprietary/vendor/lib/egl/libEGL_adreno.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/egl/libEGL_adreno.so",
+      "size": 21104,
+      "git_blob": "78aaa476934d18284db87c11436ca28f3a1a0f71",
+      "sha256": "0379792cc85217bd343553837ef3a6c32b4622eeb70b0f59f5d68a053c36a23c"
+    },
+    {
+      "path": "proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so",
+      "size": 190472,
+      "git_blob": "1a773a35e86fc3733d9495dc49f799a383c8de88",
+      "sha256": "8977a89d0fb4bc9c30d45f8dedc81fdcc80f5b44203a01c9c7bfca98b8891e0f"
+    },
+    {
+      "path": "proprietary/vendor/lib/egl/libGLESv2_adreno.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/egl/libGLESv2_adreno.so",
+      "size": 4347424,
+      "git_blob": "a612e61dbccfefd1f8174ebbb2a814245799aea5",
+      "sha256": "75d579b00a98dbe967372ba5649e089be5eb2d0804c653fae3b0ebbd714e9c61"
+    },
+    {
+      "path": "proprietary/vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/egl/libVkLayer_ADRENO_qprofiler.so",
+      "size": 1614044,
+      "git_blob": "49aa51378459aaafa2ab6aab914c5c2ec262c011",
+      "sha256": "0e56db9293e8400702b86e45432e23bc498f934e411ca13e853838f10a17fc94"
+    },
+    {
+      "path": "proprietary/vendor/lib/egl/libq3dtools_adreno.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/egl/libq3dtools_adreno.so",
+      "size": 206128,
+      "git_blob": "8d6ba29cbdccb1778d8d1d0d91375a3e2a53d093",
+      "sha256": "0e1a9a865f777cf97dbac784b448058c8adf567116377eb14d35721839343f5f"
+    },
+    {
+      "path": "proprietary/vendor/lib/egl/libq3dtools_esx.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/egl/libq3dtools_esx.so",
+      "size": 995952,
+      "git_blob": "6a6a63730c46243aa8dbae5e68d04b17a45d973a",
+      "sha256": "fd3944bfe2614a09a3881cafb707f1d1d4a36440aac69207f9ed835f2d4de309"
+    },
+    {
+      "path": "proprietary/vendor/lib/hw/vulkan.adreno.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/hw/vulkan.adreno.so",
+      "size": 3204288,
+      "git_blob": "9e5af40181fd0d47c500756a2d1eebbb1f57e534",
+      "sha256": "8facadd728dfc755c10c2c0adc5de4b1aabc133a0e8965b7d5015d5f7c6470a7"
+    },
+    {
+      "path": "proprietary/vendor/lib/libCB.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/libCB.so",
+      "size": 2727240,
+      "git_blob": "9a3acdbfceca9e8aa63218ef4ec2c3f202cbb4d0",
+      "sha256": "a2a5f5ee1f70b37e2cf4fe15a10fef225efed3c8103d0499a41b37404c65ce30"
+    },
+    {
+      "path": "proprietary/vendor/lib/libOpenCL.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/libOpenCL.so",
+      "size": 114124,
+      "git_blob": "cc79508c24d0456e2456d7267399e61542436ec6",
+      "sha256": "354c3d085ed764a8d78dfc8dbf2b9606803626c17dc97c1ed6c03c581464d0ef"
+    },
+    {
+      "path": "proprietary/vendor/lib/libadreno_app_profiles.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/libadreno_app_profiles.so",
+      "size": 679300,
+      "git_blob": "e189462c5d319f0be946c08d38b1ef99a91fa32e",
+      "sha256": "d90335226129e538c3edbdf69b5a86e7b058eae39a116f7b94fa30f2a43f4e98"
+    },
+    {
+      "path": "proprietary/vendor/lib/libadreno_utils.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/libadreno_utils.so",
+      "size": 69568,
+      "git_blob": "4da6991d5229ba1ebd4f7235ea78d183606ea095",
+      "sha256": "d68b26f8194d56358daf0d59d7bc994155a9a49de583e07b6ad8c565eed5efd9"
+    },
+    {
+      "path": "proprietary/vendor/lib/libgsl.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/libgsl.so",
+      "size": 2000792,
+      "git_blob": "d6eb259eb201ce2d8e49081abe60b2e023f2762d",
+      "sha256": "a04cabbfe0807284eb2cba64eed6d0d283288d32389647b6838da3bcdb187558"
+    },
+    {
+      "path": "proprietary/vendor/lib/libllvm-glnext.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/libllvm-glnext.so",
+      "size": 1071800,
+      "git_blob": "78b22f870f384ed791542d0315e1b5d767a2ae18",
+      "sha256": "0894e1002659885fcebcde8087abb96813501a2dce04ff1dc5d0976a6676771f"
+    },
+    {
+      "path": "proprietary/vendor/lib/libllvm-qcom.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/libllvm-qcom.so",
+      "size": 24756628,
+      "git_blob": "eb5ea909d73dde95c0a77e01b608ecac33b0ffae",
+      "sha256": "8af30c38427340c363f78a547c53d269c3c8885319cfd51749716f852faaf2af"
+    },
+    {
+      "path": "proprietary/vendor/lib/libllvm-qgl.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/libllvm-qgl.so",
+      "size": 12029780,
+      "git_blob": "c35e12e11f60c75d129c5d44e73d248d302a7308",
+      "sha256": "ecf05b8188a21d6b9f4c836c429ff0d3cd32fad64f43221042c90a131acb4731"
+    },
+    {
+      "path": "proprietary/vendor/lib/vendor.qti.qspmhal@1.0.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib/vendor.qti.qspmhal@1.0.so",
+      "size": 83468,
+      "git_blob": "1e9970e63563b65a3066e1d2034f361f8e9c2f1b",
+      "sha256": "b63deb6137e81496bf47a0640ff1c5f78db2ac4aa3562ebfbdccfbf392eac53c"
+    },
+    {
+      "path": "proprietary/vendor/lib64/egl/eglSubDriverAndroid.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so",
+      "size": 97008,
+      "git_blob": "d41f75118d7d8edb416ce8fd51022d4a43c54ac3",
+      "sha256": "1ccf691b5c6033d9cc9c658f6eee84ec8a4fa6170a07c13a18b43004064128a2"
+    },
+    {
+      "path": "proprietary/vendor/lib64/egl/libEGL_adreno.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/egl/libEGL_adreno.so",
+      "size": 44024,
+      "git_blob": "3212e911f2d109fa13a1e95d8eff1c5fc797ccb0",
+      "sha256": "89549ede471d28107e6c6745dc82fdaaafae54d2f0efa49c6c99f19660c0f1ab"
+    },
+    {
+      "path": "proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so",
+      "size": 242112,
+      "git_blob": "6f731a58385741f91691a50f9533169d8e077c1f",
+      "sha256": "1f2872fde44513a1fa4accd4ad0d702c77513c37e5652bb402e60fc431877962"
+    },
+    {
+      "path": "proprietary/vendor/lib64/egl/libGLESv2_adreno.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/egl/libGLESv2_adreno.so",
+      "size": 5722912,
+      "git_blob": "e7527c473af4455feb41cbb54ebb7a7a3b38a5fb",
+      "sha256": "56581d69674df03581ad875ac5af33663baa916e67b5e6b980c0ec6fbeb44b95"
+    },
+    {
+      "path": "proprietary/vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so",
+      "size": 2277816,
+      "git_blob": "ba09e9cca35be9701539d233c6b5c95fc14f5ed0",
+      "sha256": "dd8cdf9f6c9ac7bdc466bc7ce4761b1cc32ad9f263e9fd6f4efca86092352d80"
+    },
+    {
+      "path": "proprietary/vendor/lib64/egl/libq3dtools_adreno.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/egl/libq3dtools_adreno.so",
+      "size": 307088,
+      "git_blob": "c9222896de25c043aa6543586f6c9cf335caafa4",
+      "sha256": "88c39bfd3998ddb5d8c696faaa86ba0b4a8718a63c71046c30d6025c31821b2b"
+    },
+    {
+      "path": "proprietary/vendor/lib64/egl/libq3dtools_esx.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/egl/libq3dtools_esx.so",
+      "size": 1638304,
+      "git_blob": "19789c91a22d0a8a2f20a403d3b7473aad2e5036",
+      "sha256": "0fde1c37952aed57bafceab37957683306d8cbfefe2982667a2bd343fb7b4c53"
+    },
+    {
+      "path": "proprietary/vendor/lib64/hw/vulkan.adreno.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/hw/vulkan.adreno.so",
+      "size": 4036280,
+      "git_blob": "4cdd723d0b844641caef03a0b059412e029109f8",
+      "sha256": "562c594a24caba4831ee0e4c316abcca1443261ad8990dbce4a2b5256d475811"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libCB.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/libCB.so",
+      "size": 3547408,
+      "git_blob": "d5a521c7d8dc4ea09fed78f684ed6ed798fed062",
+      "sha256": "c8f70f55fdb8955057f2471fe1703e20864a395a490e0dab7f1ebbc77e0904bb"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libOpenCL.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/libOpenCL.so",
+      "size": 163264,
+      "git_blob": "5eb74909e28ac385eb1455bd883c7fc01fa7882d",
+      "sha256": "7e8762859ddc149201d09e258b9f433bdbe7df5c419469d696dda6bbdd3a5411"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libadreno_app_profiles.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/libadreno_app_profiles.so",
+      "size": 984352,
+      "git_blob": "fc9f86efd44f287e4d0476d6fec20e810e531239",
+      "sha256": "3d326f5c27a8e1d7b71da04010fb197bc76f313e128152b235a2ff624b58920c"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libadreno_utils.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/libadreno_utils.so",
+      "size": 93696,
+      "git_blob": "c33304ba283bf2a72e09b2a9131181cd6cc66141",
+      "sha256": "a43b1fa5e2c31746c518e8d3e2c03b221c083cbc4977880eca5accee759159f9"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libgsl.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/libgsl.so",
+      "size": 2179312,
+      "git_blob": "bbee85addcbdfc7a239a522dab82f940c795c66f",
+      "sha256": "72200284dd87178d0477bc3d23bc4fb67ee88e5b64a5031b0d58d11603a5262f"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libllvm-glnext.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/libllvm-glnext.so",
+      "size": 1354688,
+      "git_blob": "3779719e2ccfab866a3702c79067354096d47fb3",
+      "sha256": "e0fe42c94d4a87d5cdb2739dadf831947c3e9237d53e6c8c5b15cbe951d7c7ce"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libllvm-qcom.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/libllvm-qcom.so",
+      "size": 30533352,
+      "git_blob": "224382c74ad8687bf489fadff7d3d96675b09801",
+      "sha256": "5127bb5e1b366c1caa72b8ec542e8ba8a1e304950ead2797750d5c16fe72007a"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libllvm-qgl.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/libllvm-qgl.so",
+      "size": 15550456,
+      "git_blob": "5e8325d56cd6aa222b2e592dbc5b37a150f6d425",
+      "sha256": "0d5f78a957ac92d3983b29989c2e8c06fc6034ae7f40f11e8e9545989e6ae108"
+    },
+    {
+      "path": "proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so",
+      "source_url": "https://raw.githubusercontent.com/galaxy-a05s/android_vendor_samsung_bengal_f/84a0df45a234684e8d7ce258b5c140f88fa50228/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so",
+      "size": 113992,
+      "git_blob": "1cd3a648ce6002cf9e39853f2146a84ac018fce0",
+      "sha256": "7fafc71e26ef0b4aa0b1349c5a42ef0faf5fc9b02b8ea5e116768b8989093c08"
+    }
+  ]
+}

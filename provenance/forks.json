@@ -1,0 +1,29 @@
+[
+  {
+    "name": "android_kernel_lenovo_tb128fu",
+    "path": "kernel/lenovo/tb128fu",
+    "revision": "964679fda448385b152480af53826f980d737578",
+    "base": "e26c9a73897667b8f5c57714edf1660859147043",
+    "upstream": "https://github.com/Roynas-Android-Playground/kernel_lenovo_tb128fu.git",
+    "upstream_branch": "master",
+    "branch": "codex/lineage-24.0"
+  },
+  {
+    "name": "android_device_lenovo_tb128fu",
+    "path": "device/lenovo/tb128fu",
+    "revision": "c2dc327072e660f07be8fcd1eda8e3e47eef658b",
+    "base": "95812370599d155b7ae434db4c51835c8e4c0e62",
+    "upstream": "https://github.com/Roynas-Android-Playground/device_lenovo_tb128fu.git",
+    "upstream_branch": "16.2",
+    "branch": "codex/lineage-24.0"
+  },
+  {
+    "name": "android_device_lenovo_sm6225-common",
+    "path": "device/lenovo/sm6225-common",
+    "revision": "0d3457a5b1ebdc64d719739c502b10521ebfc06d",
+    "base": "9da3f8f3b7e760c693a82524d3ae816e4ec1607f",
+    "upstream": "https://github.com/Roynas-Android-Playground/device_lenovo_sm6225-common.git",
+    "upstream_branch": "16.2",
+    "branch": "codex/lineage-24.0"
+  }
+]

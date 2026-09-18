@@ -1,0 +1,168 @@
+{
+  "source_commit": "a17e3e16cfdd8a7cc04dd605b3105053cf0b5728",
+  "provenance": "Xiaomi tapas OS2.0.205.0.VMTMIXM per upstream vendor history",
+  "status": "Pinned experimental donor; see docs/status.md for runtime validation and limitations.",
+  "files": [
+    {
+      "path": "proprietary/vendor/gpu/kbc/sequence_manifest.bin",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/gpu/kbc/sequence_manifest.bin",
+      "size": 1860,
+      "sha256": "deccf88e13f85554e5e6138204f1559ace8b1de294c1bbef94ceed4985c93530",
+      "git_blob": "c09048bbf9f9ac0a420292ba70cd4218a1cc4dca"
+    },
+    {
+      "path": "proprietary/vendor/gpu/kbc/unified_kbcs_32.bin",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin",
+      "size": 1590731,
+      "sha256": "c505650fa16a7afa87c08b72ef173e078e7d16ebaca20ec84512e91c23339c04",
+      "git_blob": "6e8f69fb19ea0b171aa55c91a77b9fd7c6e14d6b"
+    },
+    {
+      "path": "proprietary/vendor/gpu/kbc/unified_kbcs_64.bin",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin",
+      "size": 1613275,
+      "sha256": "c62bdc530e35e8b461f5313ac063f0962ab39d4e7ab7c136177d44f855b0d1a8",
+      "git_blob": "e9f76fe46c66a70ba5a29d3db4fb2a48b96c9418"
+    },
+    {
+      "path": "proprietary/vendor/gpu/kbc/unified_ksqs.bin",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/gpu/kbc/unified_ksqs.bin",
+      "size": 209153,
+      "sha256": "2becc0c1e08a9b625eedc6eb9c1ad39468c3e63b19e03c5efa928160bc80c2e5",
+      "git_blob": "cdd7a04228978d366d864ab024d974a6d755d1be"
+    },
+    {
+      "path": "proprietary/vendor/lib64/egl/eglSubDriverAndroid.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so",
+      "size": 97008,
+      "sha256": "2114138e122d9f4c333204810bf20cbe434086c211b06d230445de5d0bb01301",
+      "git_blob": "d89351458ceb52c7f5a43eabd2a1202f1cdd8350"
+    },
+    {
+      "path": "proprietary/vendor/lib64/egl/libEGL_adreno.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/egl/libEGL_adreno.so",
+      "size": 44024,
+      "sha256": "d0d4da05cd23a4bb921c021416c766bab34392ac5c02c5c0645f485b483419cc",
+      "git_blob": "1e2d3d311eecce0ef3d63866db2669d4313af5ae"
+    },
+    {
+      "path": "proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so",
+      "size": 242112,
+      "sha256": "0e26bd856589e0db891a52a309da7592e317905162b53e80425d715f9a687b41",
+      "git_blob": "127ae97187d78c48aca64020fb2a489a5a2b105d"
+    },
+    {
+      "path": "proprietary/vendor/lib64/egl/libGLESv2_adreno.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/egl/libGLESv2_adreno.so",
+      "size": 5730440,
+      "sha256": "b8646db5e7bac1ed0921ed1048d8f5dbbe7be03ddef8626f05250008239872e3",
+      "git_blob": "e98d1a2052f491633062154cd02c7c54a9d99abb"
+    },
+    {
+      "path": "proprietary/vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/egl/libVkLayer_ADRENO_qprofiler.so",
+      "size": 2277816,
+      "sha256": "8d66b2619e3524d04621a21de8812a986925b4bce41d9caaed0dd16bc74de3c8",
+      "git_blob": "53b44ed9e86c4ec49160f892b78aa5213a6c8806"
+    },
+    {
+      "path": "proprietary/vendor/lib64/egl/libq3dtools_adreno.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/egl/libq3dtools_adreno.so",
+      "size": 307088,
+      "sha256": "88c39bfd3998ddb5d8c696faaa86ba0b4a8718a63c71046c30d6025c31821b2b",
+      "git_blob": "c9222896de25c043aa6543586f6c9cf335caafa4"
+    },
+    {
+      "path": "proprietary/vendor/lib64/egl/libq3dtools_esx.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/egl/libq3dtools_esx.so",
+      "size": 1638320,
+      "sha256": "2a6a0cec083868f5c588d0ddd9b7a51e8617924b8fa05b37db772c5bc3cd0a9c",
+      "git_blob": "f958eb98e68a2c142d170407a4eefb13e2404d83"
+    },
+    {
+      "path": "proprietary/vendor/lib64/hw/vulkan.adreno.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/hw/vulkan.adreno.so",
+      "size": 4044904,
+      "sha256": "12781cd1ef0b4bc5fceacd83722d39594005b5e259d44e976b98e41324b55051",
+      "git_blob": "1608ddafca1360dc60de5ec9718cf55f6acd1662"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libCB.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/libCB.so",
+      "size": 3547392,
+      "sha256": "0c33e22ce6c492acbef52b258e3d1686a2cfbbf1d586ee827166cb53bf4e9507",
+      "git_blob": "7dc8e1ea36c37c2bd5b3a18ac8202a4803f6dfd5"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libOpenCL.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/libOpenCL.so",
+      "size": 163264,
+      "sha256": "7e8762859ddc149201d09e258b9f433bdbe7df5c419469d696dda6bbdd3a5411",
+      "git_blob": "5eb74909e28ac385eb1455bd883c7fc01fa7882d"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libadreno_app_profiles.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/libadreno_app_profiles.so",
+      "size": 984384,
+      "sha256": "fe7c7003251cf592c96705d5f5fe71185a9aea6e41fc1b571a7674b2d5f780a4",
+      "git_blob": "a092f8648dec0c254c32bf5be67bfc6e12e09576"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libadreno_utils.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/libadreno_utils.so",
+      "size": 93696,
+      "sha256": "373580bbb1ff2a899bf7b6e8c082a84ce3128fcd5c094e7d60139d58b26dcaa0",
+      "git_blob": "768b457830f0c60b180730f631e7f1491d37adf0"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libgpudataproducer.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/libgpudataproducer.so",
+      "size": 732776,
+      "sha256": "83bee169129798e94e3e1c1cca828bfcb89c3b6a4bb3981c0a0b5d54d8718ce3",
+      "git_blob": "71822ba27f0f27284f1d04e459e32f48323e5b07"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libgsl.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/libgsl.so",
+      "size": 2179320,
+      "sha256": "d8c082dd39d3a8f1ce82e2450421700a119c5f38ba54f8e3b5ea45494054a6ba",
+      "git_blob": "e719f760d6bff4c7e4927b9236482c5f85a28895"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libkcl.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/libkcl.so",
+      "size": 3631672,
+      "sha256": "5f2d0559e2e9af3695a02cd8add0f5616a3c287d09f05ce7f5f1e6e2b94d8a19",
+      "git_blob": "3357bf0226a598cf9acc746f8f462847e1d5de75"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libkernelmanager.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/libkernelmanager.so",
+      "size": 53264,
+      "sha256": "61be8deba58a58a212f26fc7cc34f035b355a1e05a5dfa6aac407c77fb973844",
+      "git_blob": "9dba5dba4ef77866c9ead91161f144a1b4714381"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libllvm-glnext.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/libllvm-glnext.so",
+      "size": 1354664,
+      "sha256": "f6ee8dc4e3bf68e6d7c2eca3d9c59aa2cb8168eedfc9c54bea8cf8cc354509e9",
+      "git_blob": "e0ec91cd7f16eb4e861c1ade65c4e9efbc397cd2"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libllvm-qcom.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/libllvm-qcom.so",
+      "size": 30533352,
+      "sha256": "5127bb5e1b366c1caa72b8ec542e8ba8a1e304950ead2797750d5c16fe72007a",
+      "git_blob": "224382c74ad8687bf489fadff7d3d96675b09801"
+    },
+    {
+      "path": "proprietary/vendor/lib64/libllvm-qgl.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/libllvm-qgl.so",
+      "size": 15548720,
+      "sha256": "54a79fb9f96c0a7bfc1b421d5d96dc9ff91bba3d927431cc7fcd03467bfeb281",
+      "git_blob": "f0118bffe754576a42877d48da73e0d2dd31e276"
+    }
+  ]
+}

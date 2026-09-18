@@ -1,0 +1,14 @@
+{
+  "repository": "SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas",
+  "source_commit": "a17e3e16cfdd8a7cc04dd605b3105053cf0b5728",
+  "status": "Pinned experimental donor; see docs/status.md for runtime validation and limitations.",
+  "files": [
+    {
+      "path": "proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so",
+      "source_url": "https://raw.githubusercontent.com/SM6225-Android-Playground/proprietary_vendor_xiaomi_tapas/a17e3e16cfdd8a7cc04dd605b3105053cf0b5728/proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so",
+      "size": 113992,
+      "git_blob": "c383afceb2649b866b528e92ac1a1ad348dd0134",
+      "sha256": "11d73818a19125f07b5ae1a5574c7fcd476f28e9989cf725fcf7ffc0d39a4174"
+    }
+  ]
+}
