@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Capture 25 seconds of Perfetto data through an explicit ADB transport.
+"""Capture bounded Perfetto data through an explicit ADB transport (25 seconds by default).
 
 Default: observe the current screen without input. --settings-scroll or
 --scroll-package sends ten alternating portrait swipes (x=600, y=1600 to 600)
@@ -27,11 +27,17 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--serial', required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--duration-seconds', type=int, default=25,
+                        help='Bounded observation duration, 25 by default (10–180 seconds)')
     parser.add_argument('--adb', type=Path, default=ROOT / 'tools/platform-tools/adb')
     gestures = parser.add_mutually_exclusive_group()
     gestures.add_argument('--settings-scroll', action='store_true')
     gestures.add_argument('--scroll-package', help='Foreground app with a verified safe center scroll path')
     args = parser.parse_args()
+    if not 10 <= args.duration_seconds <= 180:
+        parser.error('Duration must be between 10 and 180 seconds')
+    if (args.settings_scroll or args.scroll_package) and args.duration_seconds < 25:
+        parser.error('Scrolling captures require at least 25 seconds')
     package = 'com.android.settings' if args.settings_scroll else args.scroll_package
     if package and not re.fullmatch(r'[A-Za-z][A-Za-z0-9_.]*', package):
         parser.error('Invalid package name')
@@ -61,9 +67,14 @@ def main():
     os.umask(0o077)
     args.output.mkdir(parents=True, exist_ok=False, mode=0o700)
     config = Path(__file__).with_name('performance-trace.pbtxt').read_bytes()
+    config, substitutions = re.subn(rb'duration_ms:\s*\d+',
+                                   f'duration_ms: {args.duration_seconds * 1000}'.encode(), config)
+    if substitutions != 1:
+        raise RuntimeError('Expected exactly one duration in the trace configuration')
     (args.output / 'config.pbtxt').write_bytes(config)
     meta = {'started_at': datetime.now(timezone.utc).isoformat(),
-            'serial': args.serial, 'settings_scroll': args.settings_scroll, 'scroll_package': package,
+            'serial': args.serial, 'duration_seconds': args.duration_seconds,
+            'settings_scroll': args.settings_scroll, 'scroll_package': package,
             'config_sha256': hashlib.sha256(config).hexdigest(), 'commands': {}}
 
     def save(name, command):
@@ -109,7 +120,7 @@ def main():
                     meta['gestures']['exit_code'] = result.returncode
                     meta['gestures']['host_end'] = time.time()
                     (args.output / 'gestures.log').write_bytes(result.stdout + result.stderr)
-                meta['perfetto_exit_code'] = proc.wait(timeout=40)
+                meta['perfetto_exit_code'] = proc.wait(timeout=args.duration_seconds + 15)
             finally:
                 if proc.poll() is None:
                     proc.terminate()

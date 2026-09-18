@@ -13,6 +13,10 @@ python3 rom-build/capture-performance.py --serial DEVICE \
 ```
 
 The default observes the current workload for 25 seconds without sending input.
+Use `--duration-seconds 75` for a longer sequence; accepted durations are 10–180
+seconds, and scripted scrolling requires at least 25. The exact duration is
+saved in the configuration and metadata. Validate full event coverage and buffer
+overruns for longer captures before trusting their timing distributions.
 Record the workload separately. Every run needs a new private output directory.
 The tool saves the exact Perfetto configuration, fingerprint, boot ID, renderer
 property, charging/thermal/memory state, trace, command results and crash buffer.
