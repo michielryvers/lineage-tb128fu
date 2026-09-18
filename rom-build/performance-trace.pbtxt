@@ -1,0 +1,57 @@
+# Bounded diagnostic capture. Keep this identical across comparison runs.
+buffers { size_kb: 65536 fill_policy: RING_BUFFER }
+duration_ms: 25000
+data_sources { config { name: "linux.ftrace" ftrace_config {
+  ftrace_events: "sched/sched_switch"
+  ftrace_events: "sched/sched_waking"
+  ftrace_events: "power/cpu_frequency"
+  ftrace_events: "power/cpu_frequency_limits"
+  ftrace_events: "power/cpu_idle"
+  ftrace_events: "power/gpu_frequency"
+  ftrace_events: "kgsl/kgsl_pwrlevel"
+  ftrace_events: "kgsl/kgsl_gpubusy"
+  ftrace_events: "kgsl/kgsl_clock_throttling"
+  ftrace_events: "kgsl/kgsl_waittimestamp_entry"
+  ftrace_events: "kgsl/kgsl_waittimestamp_exit"
+  ftrace_events: "kgsl/adreno_cmdbatch_submitted"
+  ftrace_events: "kgsl/adreno_cmdbatch_retired"
+  ftrace_events: "kgsl/adreno_gpu_fault"
+  ftrace_events: "vmscan/mm_vmscan_direct_reclaim_begin"
+  ftrace_events: "vmscan/mm_vmscan_direct_reclaim_end"
+  ftrace_events: "vmscan/mm_vmscan_kswapd_wake"
+  ftrace_events: "vmscan/mm_vmscan_kswapd_sleep"
+  ftrace_events: "thermal/thermal_temperature"
+  ftrace_events: "thermal/cdev_update"
+  atrace_categories: "gfx"
+  atrace_categories: "view"
+  atrace_categories: "input"
+  atrace_categories: "wm"
+  atrace_categories: "am"
+  atrace_categories: "power"
+  atrace_apps: "com.android.settings"
+  atrace_apps: "com.android.launcher3"
+  atrace_apps: "org.mozilla.firefox"
+  atrace_apps: "org.lineageos.jelly"
+  atrace_apps: "io.homeassistant.companion.android"
+  atrace_apps: "com.google.android.youtube"
+} } }
+data_sources { config { name: "linux.process_stats" process_stats_config {
+  scan_all_processes_on_start: true
+  proc_stats_poll_ms: 1000
+} } }
+data_sources { config { name: "linux.sys_stats" sys_stats_config {
+  cpufreq_period_ms: 500
+  meminfo_period_ms: 1000
+  meminfo_counters: MEMINFO_MEM_AVAILABLE
+  meminfo_counters: MEMINFO_SWAP_FREE
+  vmstat_period_ms: 1000
+  psi_period_ms: 1000
+} } }
+data_sources { config { name: "android.surfaceflinger.frametimeline" } }
+data_sources { config { name: "android.gpu.memory" } }
+data_sources { config { name: "android.power" android_power_config {
+  battery_poll_ms: 1000
+  battery_counters: BATTERY_COUNTER_CHARGE
+  battery_counters: BATTERY_COUNTER_CURRENT
+  battery_counters: BATTERY_COUNTER_VOLTAGE
+} } }
