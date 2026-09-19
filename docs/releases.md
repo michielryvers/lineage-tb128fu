@@ -1,6 +1,6 @@
 # Before a binary release
 
-The initial publication intentionally has no downloadable ROM image.
+The source publication has no downloadable ROM image. The September 19 development upgrade and focused checks passed, but the remaining gates below still apply before a public binary release.
 
 1. Build the complete exported source set from a fresh checkout, record the resolved manifest and toolchain/container identity, and verify the packaged partition sizes and contents.
 2. Test a clean installation and an upgrade using the exact published recovery and OTA, including post-install, A/B switching and recovery from a failed boot. Write instructions from that test, not from earlier experimental workarounds.

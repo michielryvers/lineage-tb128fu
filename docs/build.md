@@ -1,6 +1,6 @@
 # Building the experimental source snapshot
 
-These recipes were adapted from the development build environment. Syntax, pinned revisions and patch application are checked; a full build from a fresh clone of this publication has not yet been completed. Budget several hundred GB of free SSD space. The current defaults use eight build jobs, a 20 GiB container memory limit and up to 40 GiB including swap; actual host swap must exist for that allowance to help.
+The September 19 integrated source changes completed a full build and upgrade on the development tablet; public fork trees match those patches. These recipes were adapted from that development build environment. Syntax, pinned revisions and patch application are checked; a full build from a fresh clone of this publication has not yet been completed. Budget several hundred GB of free SSD space. The current defaults use eight build jobs, a 20 GiB container memory limit and up to 40 GiB including swap; actual host swap must exist for that allowance to help.
 
 Use an x86-64 Linux host with Docker, Git, Git LFS, Python 3.11+, and Android's `repo` command installed. Vendor regeneration runs on the host and uses the pinned extract-tools binaries. Build packages and Java are installed in the container.
 
@@ -26,4 +26,4 @@ BUILD_JOBS=8 BUILD_MEMORY=24g BUILD_MEMORY_SWAP=40g GO_MEMORY_LIMIT=16GiB bash r
 
 WebView is materialized from Git LFS and hash-checked before building. Outputs are under `build/lineage/out/target/product/tb128fu/`. The container base and package repositories are not frozen, so this is a pinned-source recipe, not a claim of bit-for-bit reproducibility.
 
-Build output uses development signing defaults. No public flashing procedure is provided until recovery, OTA post-install, A/B switching and a clean installation of the combined build have been verified. Google applications are a separate integration and are not bundled by these scripts.
+Build output uses development signing defaults. The development upgrade verified OTA post-install and A/B switching with the existing development recovery. A public flashing procedure still requires the exact distributable recovery, clean-install and rollback validation. Google applications are a separate integration and are not bundled by these scripts.

@@ -1,5 +1,7 @@
 # Performance capture
 
+See [measured CPU policy and results](performance-results.md) for the September 19 investigation.
+
 Establish a baseline on the installed ROM before changing drivers, scheduler or
 power settings. These tools collect evidence; they do not tune the device.
 
@@ -43,6 +45,11 @@ orientation, charging state, activity, or user interaction changed unexpectedly.
 Assistant cards; do not drag over lights, sliders, climate or automation controls.
 The script does not determine whether a path is safe. It does not launch apps,
 change settings, enable root, or verify the target page title automatically.
+
+The shell swipe helper injects synchronously and its delivered MOVE cadence can
+change with device performance. It is not a matched-input harness for comparisons
+between CPU policies; verify actual event counts/cadence or use controlled
+asynchronous injection before claiming causal CPU or energy differences.
 
 Repeat three times before drawing a conclusion. Keep renderer, content, app
 version, charging, brightness, orientation, thermal state, and trace configuration
