@@ -1,0 +1,59 @@
+diff --git a/services/core/java/com/android/server/power/stats/processor/PowerStatsAggregator.java b/services/core/java/com/android/server/power/stats/processor/PowerStatsAggregator.java
+index 38d20d2a6..641357e9b 100644
+--- a/services/core/java/com/android/server/power/stats/processor/PowerStatsAggregator.java
++++ b/services/core/java/com/android/server/power/stats/processor/PowerStatsAggregator.java
+@@ -213,6 +213,9 @@ public class PowerStatsAggregator {
+     public void reset() {
+         synchronized (this) {
+             mStats = null;
++            // Match the initial states of the next AggregatedPowerStats instance.
++            mCurrentBatteryState = AggregatedPowerStatsConfig.POWER_STATE_BATTERY;
++            mCurrentScreenState = AggregatedPowerStatsConfig.SCREEN_STATE_OTHER;
+         }
+     }
+ }
+diff --git a/services/tests/powerstatstests/src/com/android/server/power/stats/processor/PowerStatsAggregatorTest.java b/services/tests/powerstatstests/src/com/android/server/power/stats/processor/PowerStatsAggregatorTest.java
+index 7aa59bd03..d00a85ad8 100644
+--- a/services/tests/powerstatstests/src/com/android/server/power/stats/processor/PowerStatsAggregatorTest.java
++++ b/services/tests/powerstatstests/src/com/android/server/power/stats/processor/PowerStatsAggregatorTest.java
+@@ -290,6 +290,40 @@ public class PowerStatsAggregatorTest {
+         assertThat(mAggregatedStatsCount).isEqualTo(0);
+     }
+ 
++    @Test
++    public void resetPreservesInitialChargingAndScreenAttribution() {
++        PowerStats.Descriptor descriptor = new PowerStats.Descriptor(TEST_POWER_COMPONENT,
++                "majorDrain", 1, null, 0, 1, new PersistableBundle());
++        PowerStats powerStats = new PowerStats(descriptor);
++        mHistory.forceRecordAllHistory();
++        mHistory.recordBatteryState(mClock.realtime, mClock.uptime, 100, /* plugged */ true);
++        mHistory.recordStateStartEvent(mClock.realtime, mClock.uptime,
++                BatteryStats.HistoryItem.STATE_SCREEN_ON_FLAG);
++        powerStats.stats = new long[]{0};
++        mHistory.recordPowerStats(mClock.realtime, mClock.uptime, powerStats);
++        advance(1000);
++        powerStats.stats = new long[]{10000};
++        mHistory.recordPowerStats(mClock.realtime, mClock.uptime, powerStats);
++
++        // Exporter resets the aggregator after each query. Repeating an unchanged
++        // history must not move plugged-in, screen-on usage to battery/screen-off.
++        for (int pass = 0; pass < 2; pass++) {
++            mAggregatedStatsCount = 0;
++            mAggregator.aggregatePowerStats(mHistory, 0, MonotonicClock.UNDEFINED, stats -> {
++                mAggregatedStatsCount++;
++                long[] values = new long[1];
++                PowerComponentAggregatedPowerStats component =
++                        stats.getPowerComponentStats(TEST_POWER_COMPONENT);
++                assertThat(component.getDeviceStats(values, new int[]{
++                        AggregatedPowerStatsConfig.POWER_STATE_OTHER,
++                        AggregatedPowerStatsConfig.SCREEN_STATE_ON})).isTrue();
++                assertThat(values).isEqualTo(new long[]{10000});
++            });
++            assertThat(mAggregatedStatsCount).isEqualTo(1);
++            mAggregator.reset();
++        }
++    }
++
+     private void advance(long durationMs) {
+         mClock.realtime += durationMs;
+         mClock.uptime += durationMs;

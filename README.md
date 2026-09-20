@@ -2,7 +2,7 @@
 
 Experimental Android 17 device-specific development for the **Qualcomm TB128FU**. This is an independent community project, not an official LineageOS or Lenovo release. Other model numbers, including the MediaTek TB125FU, are not supported by this work.
 
-**Source publication only: there is no public installable ROM release yet.** On September 19, the integrated source changes completed a full development ROM build and an upgrade on one TB128FU, including natural snapshot merge and focused acceptance checks. The published fork trees match the ordered patches used for that build. A fresh build from this public recipe, clean installation, rollback and extended stability validation remain outstanding.
+**Source publication only: there is no public installable ROM release yet.** On September 20, the integrated development ROM was incrementally rebuilt, upgraded on one TB128FU, and verified after natural snapshot merge and separate Google-app restoration. The published fork trees and platform patches match the validated sources. A fresh build from this public recipe, clean installation, rollback and extended stability validation remain outstanding.
 
 ## Repositories
 
@@ -17,11 +17,12 @@ Source forks use `codex/lineage-24.0`. Original upstream history is retained. Th
 
 ## Current state
 
-Bluetooth headphone audio and YouTube playback have been exercised. Android UI rendering defaults to OpenGL because Vulkan still produces black rectangles while scrubbing YouTube videos. The September 19 build includes the measured CPU event-clamp policy and retains the working graphics/media/Bluetooth fixes. Long-running stability, clean-install and rollback testing remain open.
+Bluetooth headphone audio and YouTube playback have been exercised. Android UI rendering defaults to OpenGL because Vulkan still produces black rectangles while scrubbing YouTube videos. The September 20 build retains the measured CPU event-clamp policy and graphics/media/Bluetooth fixes, adds measured main-only compositor placement, and includes tracing and power-attribution correctness fixes. Long-running stability, clean-install and rollback testing remain open.
 
 - [Build instructions](docs/build.md)
 - [Tested behavior and known issues](docs/status.md)
 - [CPU policy and performance evidence](docs/performance-results.md)
+- [Compositor follow-up and installed verification](docs/compositor-results.md)
 - [Updating from upstream](docs/upstream.md)
 - [Source and driver provenance](docs/provenance.md)
 - [Release checklist](docs/releases.md)

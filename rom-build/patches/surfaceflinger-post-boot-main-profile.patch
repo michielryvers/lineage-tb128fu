@@ -1,0 +1,18 @@
+--- a/services/surfaceflinger/SurfaceFlinger.cpp
++++ b/services/surfaceflinger/SurfaceFlinger.cpp
+@@ -881,6 +881,15 @@
+             ftl::FakeGuard guard(mStateLock);
+             enableRefreshRateOverlay(true);
+         }
++
++        // Opt in after boot workers and RenderEngine have been initialized. Applying
++        // this profile in init() would also change the placement they inherit.
++        // Devices opt in by providing the profile's writable cpuset.
++        if (isProfileValidForProcess("SFMainPostBootPolicy", getuid(), getpid())) {
++            if (!SetTaskProfiles(0, {"SFMainPostBootPolicy"})) {
++                ALOGW("Failed to set post-boot main task profile");
++            }
++        }
+     }));
+ }
+ 

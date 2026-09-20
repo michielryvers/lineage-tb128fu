@@ -36,5 +36,14 @@
   },
   "update-engine": {
     "base": "1264871479008d8e17e09638acf0cfa85e3c927f"
+  },
+  "frameworks-base": {
+    "base": "07d5826bb16321297e8258d3f82e8066a2bc0b55"
+  },
+  "frameworks-native": {
+    "base": "a1e7c40d2d2a9b6ee75667b823047742a79a71bf"
+  },
+  "system-core": {
+    "base": "1375cc767964bbac2070bc41ebc3c864589846b4"
   }
 }

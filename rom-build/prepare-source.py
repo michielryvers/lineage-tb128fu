@@ -24,7 +24,10 @@ for item in forks:
     if head != item['revision']:
         sys.exit(f"Unexpected source revision for {item['path']}: {head}")
 plan = [
+    ('frameworks/native', 'surfaceflinger-post-boot-main-profile.patch', bases['frameworks-native']['base']),
+    ('system/core', 'task-profile-sf-main-post-boot.patch', bases['system-core']['base']),
     ('system/update_engine', 'update-engine-recovery-vabc-remap.patch', bases['update-engine']['base']),
+    ('frameworks/base', 'framework-power-stats-reset.patch', bases['frameworks-base']['base']),
     ('build/soong', 'soong-host-memory.patch', bases['soong']['base']),
     ('prebuilts/clang/host/linux-x86', 'clang-c2d-builtins-visibility.patch', bases['clang-prebuilts']['base']),
     ('hardware/qcom-caf/sm8250/audio', 'audio-prebuilt-stack-selection.patch', bases['qcom-audio']['base']),
@@ -79,8 +82,20 @@ for path in ['framework/tcmclient.jar', 'etc/permissions/privapp-permissions-qti
 subprocess.run([sys.executable, str(project / 'rom-build/integrate-gpu.py'), str(root)], check=True)
 subprocess.run([sys.executable, str(project / 'rom-build/prepare-c2d-compat.py')], check=True)
 subprocess.run([sys.executable, str(project / 'rom-build/prepare-c2d-gsl.py')], check=True)
+# Extraction rewrites these files even when their contents are identical.
+# Preserve unchanged input timestamps so an incremental build does not need
+# to regenerate the entire Soong graph solely because preparation ran again.
+generated = {}
+for directory in (root / 'vendor/lenovo/sm6225-common', root / 'vendor/lenovo/tb128fu'):
+    for pattern in ('*.bp', '*.mk'):
+        for file in directory.glob(pattern):
+            if file.is_file() and not file.is_symlink():
+                generated[file] = (file.read_bytes(), file.stat())
 subprocess.run([sys.executable, 'extract-files.py', '--regenerate_makefiles'],
                cwd=root / 'device/lenovo/tb128fu', check=True,
                env={**os.environ, 'PYTHONPATH': '../../../tools/extract-utils'})
+for file, (contents, stat) in generated.items():
+    if file.is_file() and file.read_bytes() == contents:
+        os.utime(file, ns=(stat.st_atime_ns, stat.st_mtime_ns))
 (records / 'source-integration.json').write_text(json.dumps(applied, indent=2) + '\n')
 print('Source integration prepared; full Android build validation is next')

@@ -1,0 +1,22 @@
+--- a/libprocessgroup/profiles/task_profiles.json
++++ b/libprocessgroup/profiles/task_profiles.json
+@@ -596,6 +596,19 @@
+       ]
+     },
+     {
++      "Name": "SFMainPostBootPolicy",
++      "Actions": [
++        {
++          "Name": "JoinCgroup",
++          "Params":
++          {
++            "Controller": "cpuset",
++            "Path": "surfaceflinger-main"
++          }
++        }
++      ]
++    },
++    {
+       "Name": "SFRenderEnginePolicy",
+       "Actions": [
+         {
