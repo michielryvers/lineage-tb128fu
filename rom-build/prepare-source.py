@@ -31,6 +31,8 @@ plan = [
     ('build/soong', 'soong-host-memory.patch', bases['soong']['base']),
     ('prebuilts/clang/host/linux-x86', 'clang-c2d-builtins-visibility.patch', bases['clang-prebuilts']['base']),
     ('hardware/qcom-caf/sm8250/audio', 'audio-prebuilt-stack-selection.patch', bases['qcom-audio']['base']),
+    ('kernel/lenovo/tb128fu', 'kernel-tb128fu-backlight-flicker.patch',
+     next(item['revision'] for item in forks if item['path'] == 'kernel/lenovo/tb128fu')),
 ]
 # Later patches may edit a hunk introduced by an earlier patch. Recognize an
 # exact fully-patched tree through an isolated index instead of expecting each
